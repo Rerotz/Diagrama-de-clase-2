@@ -1,12 +1,14 @@
 
 package capanegocio;
 
+import java.util.ArrayList;
+
 
 public class Cliente {
     private char codCliente;
     private String nombreCliente;
     private String celularCliente;
-    public RegistroVenta tieneRegistroVenta;
+    public ArrayList <RegistroVenta> tieneRegistroVenta = new ArrayList(); 
 
     public char getCodCliente() {
         return codCliente;
