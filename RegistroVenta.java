@@ -1,15 +1,15 @@
 
 package capanegocio;
-
+import java.util.ArrayList;
 
 public class RegistroVenta {
     private char codRegistro;
     private String fechaHoraRegistro;
     private Double PrecioRegistro;
-    public Mantenimiento tieneMantenimiento;
     public Cliente registraCliente;
     public Automovil consignaAutomovil;
     public Vendedor tieneVendedor; 
+    public ArrayList <Mantenimiento> tieneMantenimiento = new ArrayList();
 
     public char getCodRegistro() {
         return codRegistro;
